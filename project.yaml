@@ -35,7 +35,7 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: ''
+    custom_js: "(function () {\n  const banner = document.querySelector(\".eu-cookie-compliance-banner\");\n  if (banner) {\n    banner.style.display = \"none\";\n  }\n})();\n"
     custom_css: ''
     mock_content:
         - { selector: '', type: title }
